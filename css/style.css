@@ -36,6 +36,9 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	font-family: Montserrat;
+	font-weight: 500;
+	color: #252b42;
 }
 input,
 button,
@@ -76,17 +79,51 @@ h6 {
 	font-size: inherit;
 	font-weight: 400;
 }
-/*--------------------*/
-
-.bigred {
-	font-size: 20px;
-	color: red;
-}
+/* ---------------------------------- */
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
 }
-._conteiner {
-	min-width: 1046px;
-	margin: 0 auto;
+/* ----------------------------------- */
+._container {
+	max-width: 1046px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
 }
+/* ------------------шапка----------------- */
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 40;
+}
+.header__container {
+	display: flex;
+	min-height: 104px;
+	align-items: center;
+}
+.header__logog {
+	font-size: 24px;
+	font-weight: 700;
+	color: inherit;
+}
+.header__menu {
+	margin-left: 132px;
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu__item {
+	margin-left: 21px;
+}
+.menu__link {
+	color: #737373;
+	line-height: 171%;
+	font-weight: 600;
+}
+/* ----------------------------------- */
