@@ -1,62 +1,92 @@
-/* Указываем box sizing */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 *,
-*::before,
-*::after {
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-	padding: 0;
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
 }
 
-/* Убираем внешние отступы */
-body,
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
 h1,
 h2,
 h3,
 h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-	margin: 0;
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
 }
+/*--------------------*/
 
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+.bigred {
+	font-size: 20px;
+	color: red;
 }
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-	list-style: none;
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
 }
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-	max-width: 100%;
-	display: block;
-}
-
-input,
-button,
-textarea,
-select {
-	font: inherit;
+._conteiner {
+	min-width: 1046px;
+	margin: 0 auto;
 }
