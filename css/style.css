@@ -83,6 +83,8 @@ h6 {
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 /* ----------------------------------- */
 ._container {
@@ -90,6 +92,17 @@ h6 {
 	margin: 0px auto;
 	padding: 0px 15px;
 	box-sizing: content-box;
+}
+._ibg {
+	position: relative;
+}
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
 }
 /* ------------------шапка----------------- */
 .header {
@@ -112,6 +125,21 @@ h6 {
 .header__menu {
 	margin-left: 132px;
 }
+@media (max-width: 992px) {
+	.header__menu {
+		margin-left: 80px;
+	}
+}
+@media (max-width: 767px) {
+	.header__menu {
+		margin-left: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.header__menu {
+		margin-left: 20px;
+	}
+}
 .menu {
 }
 .menu__list {
@@ -126,4 +154,71 @@ h6 {
 	line-height: 171%;
 	font-weight: 600;
 }
-/* ----------------------------------- */
+@media (max-width: 479px) {
+	.menu__list {
+		font-size: 18px;
+	}
+}
+/* -------------main---------------------- */
+.page {
+	flex: 1 1 auto;
+}
+.page_main_block {
+}
+.main_block {
+	position: relative;
+}
+.main_block__container {
+}
+._container {
+}
+.main_block__body {
+	padding: 184px 0px 191px 0px;
+	position: relative;
+	z-index: 2;
+	max-width: 509px;
+}
+.main_block__body > *:not(:last-child) {
+	margin-bottom: 35px;
+}
+.main_block__title {
+	font-size: 58px;
+	line-height: 137%;
+	font-weight: 800;
+	letter-spacing: 0.2px;
+}
+.main_block__text {
+	font-weight: 500;
+	color: #737373;
+	line-height: 150%;
+	font-size: 20px;
+}
+.main_block_buttons {
+	display: inline-flex;
+}
+.main_block__button {
+	background: #ff7b47;
+	border-radius: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 36px;
+	min-height: 48px;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 150%;
+}
+.main_block__button_broder {
+}
+.main_block_image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+/* -------------footer---------------------- */
+
+.footer {
+}
