@@ -197,7 +197,6 @@ h6 {
 	display: inline-flex;
 }
 .main_block__button {
-	background: #ff7b47;
 	border-radius: 37px;
 	display: flex;
 	justify-content: center;
@@ -205,11 +204,21 @@ h6 {
 	padding: 5px 36px;
 	min-height: 48px;
 	letter-spacing: 0.2px;
-	color: #ffffff;
 	font-weight: 700;
 	line-height: 150%;
 }
+.main_block__button:not(:last-child) {
+	margin-right: 10px;
+}
+.main_block__button_orange {
+	color: #ffffff;
+	background: #ff7b47;
+}
 .main_block__button_broder {
+	color: #0d5c63;
+	border: 1px solid #0d5c63;
+	box-sizing: border-box;
+	border-radius: 37px;
 }
 .main_block_image {
 	position: absolute;
@@ -217,6 +226,16 @@ h6 {
 	height: 100%;
 	top: 0;
 	left: 0;
+}
+@media (max-width: 1300px) {
+	.main_block_image img {
+		object-position: right;
+	}
+}
+@media (max-width: 800px) {
+	.main_block_image img {
+		opacity: 0.5;
+	}
 }
 /* -------------footer---------------------- */
 
